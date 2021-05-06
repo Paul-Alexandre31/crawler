@@ -4,8 +4,13 @@ const puppeteer = require('puppeteer');
     const browser = await puppeteer.launch({headless:false});
     const page = await browser.newPage();
     await page.goto('https://stockx.com/fr-fr/sneakers/most-popular');
-    await page.screenshot({ path: 'example.png' });
-    dsfdsf
+    let list = await page.$$eval('[data-testid="product-tile"]', (tiles)=> {
+        let products = [];
+        tiles.forEach((tile)=>{
+            product.push()
+        })
+    });
+    console.log(list)
 //test
    // await browser.close();
 })();
