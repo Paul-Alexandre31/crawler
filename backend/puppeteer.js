@@ -10,6 +10,8 @@ const puppeteer = require('puppeteer');
             products.push({
                 url: tile.querySelector('a').href,
                 price: parseInt(tile.querySelector('.price-line-div div:nth-child(2)').innerText),
+               //photo: tile.querySelector('img').src, #recup img quand html fonctionel
+
             })
         });
         return products
