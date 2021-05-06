@@ -7,8 +7,12 @@ const puppeteer = require('puppeteer');
     let list = await page.$$eval('[data-testid="product-tile"]', (tiles)=> {
         let products = [];
         tiles.forEach((tile)=>{
-            product.push()
-        })
+            products.push({
+                url: tile.querySelector('a').href,
+                price: parseInt(tile.querySelector('.price-line-div div:nth-child(2)').innerText),
+            })
+        });
+        return products
     });
     console.log(list)
 //test
