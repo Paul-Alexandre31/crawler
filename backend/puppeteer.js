@@ -1,6 +1,6 @@
 const puppeteer = require('puppeteer');
 
-(async () => {
+module.exports = async function(){
     const browser = await puppeteer.launch({headless:false});
     const page = await browser.newPage();
     await page.goto('https://stockx.com/fr-fr/sneakers/most-popular');
@@ -17,7 +17,8 @@ const puppeteer = require('puppeteer');
         });
         return products
     });
-    console.log(list)
-//test
-   // await browser.close();
-})();
+
+    browser.close();
+
+   return list;
+}
