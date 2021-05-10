@@ -12,7 +12,7 @@ const scanner = require('./puppeteer');
 
    app.get('/', function (req, res) {
       res.render('index', {
-         name: 'Romain-Alexandre',
+         name: 'RomAinlexandre',
          list: list,
       });
    });
