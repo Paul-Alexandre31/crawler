@@ -20,5 +20,5 @@ module.exports = async function(){
 
     browser.close();
 
-   return list;
+    return list;
 }

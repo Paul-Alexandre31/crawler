@@ -8,6 +8,7 @@
 </head>
 
 <body class="layout">
+
 <header>
     <nav class="navbar shadow-1 primary">
         <button class="btn rounded-1 white hide-md-up sidenav-trigger small mr-2" data-target="main-sidenav">
@@ -19,6 +20,23 @@
         </div>
     </nav>
 </header>
+
+    <% list.forEach(function(shoe){ %>
+        <div class="card shadow-1 fx-row">
+            <div class="primary d-flex vcenter fx-center px-4">
+                <h4>Content</h4>
+            </div>
+            <div class="flex fx-col fx-grow">
+                <div class="card-header"><%= shoe.name %></div>
+                <div class="card-content">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                </div>
+            </div>
+        </div>
+    <% }); %>
+
 
 <div class="sidenav white shadow-1" id="main-sidenav" data-ax="sidenav">
     <div class="sidenav-header">
