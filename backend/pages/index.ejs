@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Sheeeeeeeeee ! </title>
+    <title>Project Crawler / StockX </title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/axentix@1.2.1/dist/css/axentix.min.css" />
@@ -23,7 +23,7 @@
 
 
 <main>
-    <h1 class="txt-center font-w300 mx-2">Best Sellers </h1>
+    <h1 class="txt-center font-w300 mx-2">StockX Best Sellers </h1>
 
     <div class="container xl-5">
         <div class="caroulix" id="example-caroulix" data-ax="caroulix" data-ax-caroulix-autoplay-enabled="true" data-caroulix-indicators-enabled="true">
@@ -52,12 +52,12 @@
         <% list.forEach(function(shoe){ %>
 
             <div class="card airforce light-1 shadow-1">
-                <div class="white d-flex vcenter fx-center px-4">
+                <div class=" white d-flex vcenter fx-center px-4">
                     <div class="card-header">
                         <img alt="photo" src="<%= shoe.photo %>">
                     </div>
                 </div>
-                <div class="grey fx-col fx-grow">
+                <div class="gradiant-gris-moche fx-col fx-grow">
                     <div class="card-header"><%= shoe.name %></div>
                     <div class="card-header">Price : <%= shoe.price %> €</div>
                     <div class="card-content">
@@ -72,7 +72,7 @@
     </div>
 </main>
 
-<footer class="footer grey">
+<footer class="footer #504e4e">
     Copyright © 2021 - Sheeeesh Corporation
 </footer>
 
