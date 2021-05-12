@@ -5,7 +5,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/axentix@1.2.1/dist/css/axentix.min.css" />
+    <link rel="stylesheet" href="main.css">
 </head>
+
 
 <body class="layout">
 
@@ -20,9 +22,10 @@
         </div>
     </nav>
 </header>
-
+<div class="grix xs4">
     <% list.forEach(function(shoe){ %>
-        <div class="card shadow-1 fx-row">
+
+        <div class="card airforce light-1 shadow-1">
             <div class="primary d-flex vcenter fx-center px-4">
                 <div class="card-header">
                     <img alt="photo" src="<%= shoe.photo %>">
@@ -33,15 +36,14 @@
                 <div class="card-header">Price : <%= shoe.price %> €</div>
                 <div class="card-content">
                     <p>
-                       Number of sale : <%= shoe.nbrSell %>
+                        Number of sale : <%= shoe.nbrSell %>
                     </p>
                 </div>
-
             </div>
+
         </div>
-    <% }); %>
-
-
+<% }); %>
+</div>
 <div class="sidenav white shadow-1" id="main-sidenav" data-ax="sidenav">
     <div class="sidenav-header">
         <img src="https://useaxentix.com/img/axentix.svg" alt="" class="sidenav-logo" />
@@ -77,12 +79,11 @@
             </div>
         </div>
     </div>
-</main>
 
+</main>
 <footer class="footer primary">
     Copyright © 2021 - Sheeeesh Corporation
 </footer>
-
 <script src="https://cdn.jsdelivr.net/npm/axentix@1.2.1/dist/js/axentix.min.js"></script>
 </body>
 </html>
